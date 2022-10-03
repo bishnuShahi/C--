@@ -18,7 +18,7 @@ int partition(int arr[], int start, int end)
         if(arr[j]<=p)
         {
             ++i;        //counting for the correct position of pivot
-            swap(arr[i], arr[j]);   //keeping smaller elements before pivot
+            swap(arr[i], arr[j]);   //keeping smaller elements before pivot since 'i' will represent pivot position
         }
     }
     swap(arr[end], arr[i+1]);   //correct position of pivot
