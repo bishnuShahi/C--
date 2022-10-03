@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void swap(int &a, int &b)
+void swap(int &a, int &b) 
 {
     int temp = a;
     a = b;
@@ -31,8 +31,8 @@ void quick_sort(int arr[], int start, int end)
     { 
     int p = partition(arr, start, end);     //getting position of pivot and dividing smaller and greater elements
 
-    quick_sort(arr, start, p-1); //smaller than pivot
-    quick_sort(arr, p+1, end);   //greater than pivot
+    quick_sort(arr, start, p-1); //sorting smaller than pivot
+    quick_sort(arr, p+1, end);   //sorting greater than pivot
     }
 }
 
